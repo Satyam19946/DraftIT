@@ -1,0 +1,4 @@
+1. As a user, I want to sign up so I can store my drafts
+2. As a user, I want to log in using my details so that I can access my drafts.
+3. As a user, I want to add a new email draft, so that I can start working on a new draft.
+4. As a user, I want to add a LinkedIn message draft with recruiter/connection template, so that I can connect with people in a better way.
