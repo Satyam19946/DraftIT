@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 app.use(cors());
+app.use(express.json());
 
 // Connect to mongodb
 require('dotenv').config();
@@ -23,9 +24,10 @@ mongoose.connection.once('open', () => {
 
 const port = process.env.PORT | 3000;
 
+// user routes
 const user = require('./user/user.js');
-
-app.post('/', user.add)
+const { json } = require('express');
+app.post('/user/add/', user.add)
 
 app.listen(port, () => {
   console.log(`Express app listening at http://localhost:${port}`)

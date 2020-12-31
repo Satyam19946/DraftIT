@@ -24,10 +24,14 @@ export default function StartPage({ navigation }: Prop ) {
         This is the Start page. 
       </Text>
       <TouchableOpacity style={styles.loginbutton} onPress={goToLogIn}>
-        Log In
+        <Text>
+          Log In
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.signupbutton} onPress={goToSignUp}>
-        Sign Up
+        <Text>
+          Sign Up
+        </Text>
       </TouchableOpacity>
     </View>
   )

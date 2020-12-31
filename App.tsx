@@ -1,7 +1,7 @@
 import React from 'react';
-import StartPage from "./src/Start Screen/StartPage";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import StartPage from "./src/Start Screen/StartPage";
 import LogInPage from './src/Log In Screen/LogInPage';
 import SignUpPage from './src/Sign Up Screen/SignUpPage';
 import { RootStackParamList } from './src/NavigationProps/NavigationProps';

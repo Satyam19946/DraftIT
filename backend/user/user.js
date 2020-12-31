@@ -1,7 +1,7 @@
 const User = require('../models/user.model');
 const bcrypt = require('bcrypt');
 
-// app.post('/', () => user.add)
+// app.post('/user/add', () => user.add)
 exports.add = function (req, res) {
   const username = req.body.username;
   const firstName = req.body.firstName;
@@ -23,3 +23,5 @@ exports.add = function (req, res) {
     .catch(err => res.status(400).json('Error: ' + err));
   });
 }
+
+// app.get('/user/?ID=)
